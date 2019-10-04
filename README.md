@@ -1,4 +1,4 @@
-# Assignment 1
+# Pre-Work for SQL Workshop
 
 ## Installation & Account Setup
 
