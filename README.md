@@ -2,22 +2,17 @@
 
 ## Installation & Account Setup
 
-In this assignment you will be setting up the software and online tools that you will be using throughout this course. Below there are links and instructions to relevant sites.
+The following instructions set up the software and online tools that you will be using for this workshop. Below there are links and instructions to relevant sites.
 
-The first step is to create a [Github account](https://github.com/join?source=header) if you do not already have one: 
+## Create Accounts
+
+The first step is to create a [Github account](https://github.com/join?source=header) if you do not already have one. Then create an [Amazon Web Services](https://aws.amazon.com/) account. **Note 1:** You will need a credit card to create an account but we will only use the free services as part of this workshop. **Note 2**: If you already have an Amazon account associated with the email you ise (EG - for shopping) then this process will change the password to that account as well. 
 
 Next you will need to install the software we will be using (if you already have them installed make sure they are the latest versions):
-   * Zotero + Friefox browser
    * R
    * RStudio
    * Git
-   * Swirl Package in R
    
-## Installing Zotero bibliographic software
-* You will need to install the [Firefox browser](https://www.mozilla.org/en-US/firefox/new/) to use Zotero (You can use Google Chrome but it is buggy so make your life easier and just install Firefox)
-* Install [Zotero Desktop](https://www.zotero.org/)
-* Then install [Zotero connector for Firefox](https://www.zotero.org/download/)
-
 ## Installing R
 * Choose a [download mirror site](https://cran.r-project.org/mirrors.html) from the list that is close to you geographically  
 * Download the version of R that is appropriate to your operating system
@@ -33,10 +28,12 @@ Next you will need to install the software we will be using (if you already have
 * Download [Git](https://git-scm.com/downloads) 
 
 ## Connecting Git-Github-RStudio
-* You will also need to link your Github account to RStudio by following [these instructions](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN) or [these instructions](http://happygitwithr.com/rstudio-git-github.html).
-* For many students this will be the most challenging task this semester. Several errors can be corrected by following the instructions located [here](http://happygitwithr.com/troubleshooting.html).
+* You will also need to link your Github account to RStudio by following [these instructions](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN) or [these instructions](http://happygitwithr.com/rstudio-git-github.html)
+* Once you have connected test your connection by forking this repository (top right of this page) then cloning your new repository (green button, copy the URL). Then in RStudio click `File` -> `New Project` -> `Version Control` -> `Git` and paste the URL into the top box
 
-A common error is: 
+*Two common errors:* 
+
+**Error 1** 
 
 `error: unable to read askpass response from 'rpostback-askpass'`
 
@@ -47,15 +44,11 @@ The fix for most systems is:
 * Close the window
 * Now make some more edits to some file so that you have new content to push click on the "push" button in RStudio and this time the push should work
 
-If you are using a Mac and this does not fix your error please try [these instructions](https://github.com/core-methods-in-edm/Assignment1/blob/master/MAc%20Github%20help%20pages.pdf). 
+**Error 2**
 
+You are using a Mac and you cannot access Git when you try to create a new project through `Version Control`.
 
-## Swirl
-* Once you have installed both programs, open RStudio (RStudio will automatically open R at the same time)
-* R is modular, we can install mini-programs called *packages* within it like apps on your phone to do specific tasks, in this activity we will be using the Swirl package. Swirl is a teaching tool for learning R, it comprises questions and answers and a bit of AI (for positive reinforcement)
-* Install the Swirl package by typing `install.packages("swirl")` in the console window (located on the left hand side of the RStudio interface). If you get an error message you can also install by clicking the "packages" tab in the right hand pane and then clicking "install".
-* Once we have installed the package we need to turn it on, we do this by inputing the code `library(swirl)` - Swirl will tell you to type `swirl()` **but don't do that just yet!**
-* First we need to load a lesson into Swirl, to do this cut and paste the following code into the console window (you will need to be connected to the internet):  
-`install_course_github("core-methods-in-edm", "swirl", multi = TRUE)`
-* Once the lesson finishes installing type `swirl()`, Swirl will then guide you through setting up a user Id (please use your full name so we can identify you later). Choose the `Unit 1 - Introduction` course and the `Basic Building Blocks` lesson when you have the option.
-* At the completion of the lesson you will submit your answers through a Google form. We will collect information on how many questions you answer, how many attempts you took to answer each question and the time you answered
+* Open `Tools` -> `Global Options` -> `Git/SVN`
+* In the top box make sure that the file path reads:
+`usr/local/git/bin/git`
+* If it does not click on `Browse` and locate that file
