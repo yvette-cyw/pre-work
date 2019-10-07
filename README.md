@@ -13,6 +13,8 @@ Next you will need to install the software we will be using (if you already have
    * RStudio
    * Git
    
+**If you already have R & RStudio Installed please make sure that all packages and versions are updated**
+   
 ## Installing R
 * Choose a [download mirror site](https://cran.r-project.org/mirrors.html) from the list that is close to you geographically  
 * Download the version of R that is appropriate to your operating system
