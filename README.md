@@ -1,5 +1,9 @@
 # Pre-Work for SQL Workshop
 
+## Download Data
+
+Please download the [Open University Learning Analytics Data Set](https://analyse.kmi.open.ac.uk/open_dataset). 
+
 ## Installation & Account Setup
 
 The following instructions set up the software and online tools that you will be using for this workshop. Below there are links and instructions to relevant sites.
