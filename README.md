@@ -58,3 +58,5 @@ You are using a Mac and you cannot access Git when you try to create a new proje
 * In the top box make sure that the file path reads:
 `usr/local/git/bin/git`
 * If it does not click on `Browse` and locate that file
+
+done
